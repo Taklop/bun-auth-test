@@ -10,7 +10,15 @@ app.use(html());
 app.get('/', ({ html }: any) =>
   html(
     <BaseHtml>
-      <h1>Hello, Elysia lol!</h1>
+      <h1>Hello, World!</h1>
+      <h2>This is an app deployed on fly.io</h2>
+      <p>It uses:</p>
+      <ul>
+        <li>Elysia</li>
+        <li>Typed HTML</li>
+        <li>htmx</li>
+        <li>bun</li>
+      </ul>
     </BaseHtml>
   )
 );
