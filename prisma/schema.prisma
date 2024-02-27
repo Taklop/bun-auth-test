@@ -19,3 +19,15 @@ model User {
   email     String?  @unique
   name      String?
 }
+
+model AuthUser {
+  id       String    @id
+  sessions Session[]
+}
+
+model Session {
+  id        String   @id
+  userId    String
+  expiresAt DateTime
+  authUser  AuthUser @relation(references: [id], fields: [userId], onDelete: Cascade)
+}

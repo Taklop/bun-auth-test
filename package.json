@@ -20,7 +20,10 @@
   "dependencies": {
     "@bogeychan/elysia-logger": "^0.0.17",
     "@elysiajs/html": "^0.8.0",
+    "@lucia-auth/adapter-prisma": "^4.0.0",
     "@prisma/client": "^5.10.2",
-    "elysia": "^0.8.17"
+    "elysia": "^0.8.17",
+    "lucia": "^3.0.1",
+    "oslo": "^1.1.3"
   }
 }
